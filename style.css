@@ -1,4 +1,62 @@
 body
 {
-	background-color: red;
+	background-color: #D3D3D3;
+	font-family: "Garmond", "Times New Roman", serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Helvetica", "Verdana", "Arial", sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 18pt;
+}
+
+h2 {
+	font-size: 16pt;
+}
+
+li, p {
+	color: orange;
+}
+
+em {
+	color: red;
+}
+
+ul {
+	list-style-type: square;
+}
+
+ul li {
+	margin-bottom: 10px;
+}
+
+ul li ul li {
+	list-style-type: circle;
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+img {
+	border-radius: 10px;
+}
+
+img:hover {
+	opacity: .5;
+}
+
+pre {
+	padding: 20px;
+	background-color: blue;
+	border: 2px solid black;
+}
+
+table, table td {
+	border: 3px solid black;
 }
