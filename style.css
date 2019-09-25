@@ -4,6 +4,9 @@ body
 	font-family: "Garmond", "Times New Roman", serif;
 }
 
+header h1 {
+	color: green;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Helvetica", "Verdana", "Arial", sans-serif;
@@ -60,3 +63,30 @@ pre {
 table, table td {
 	border: 3px solid black;
 }
+
+aside {
+	float:right;
+
+}
+
+#html-css-js {
+	background-color: pink;
+}
+
+nav ul li {
+	display: inline;
+	background-color: purple;
+	font-weight: bold;
+	border: 2px solid brown;
+	color: white;
+	font-size: 42pt;
+}
+
+nav  a {
+	color: white;
+}
+
+
+
+
+

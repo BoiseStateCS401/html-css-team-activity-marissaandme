@@ -1,0 +1,60 @@
+:root {
+	--nav-height: 50px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body
+{
+	margin: 0;
+}
+
+main {
+}
+
+img {
+	height: var(--nav-height);
+}
+
+li#logo {
+	float: left;
+}
+
+nav ul {
+	text-align: right;
+	padding: 0;
+	height: var(--nav-height);
+}
+
+nav  ul  li {
+	display: inline; 
+	line-height: var(--nav-height);
+}
+
+#flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+section {
+	width: 200px; 
+	border: 3px solid black;
+	padding: 10px;
+}
+
+#red {
+	background-color: red;
+}
+
+#green {
+	background-color: green;
+}
+#blue{
+	background-color: blue;
+}
+#yellow {
+	background-color: yellow;
+}

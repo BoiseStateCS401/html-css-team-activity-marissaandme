@@ -1,0 +1,107 @@
+/*https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/ 
+:root {
+	--nav-height: 50px;
+	--nav-bg-color: MediumSlateBlue;
+	--nav-link-color: DeepPink;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+
+	/* Use flex layout context for nav, header, main, footer */
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul {
+	margin: 0;
+	background-color: var(--nav-bg-color);
+	text-align: right; 
+	position: relative; /* set relative so we can use absolute for logo */
+}
+
+nav li {
+	display: inline-block;
+	margin-left: -4px; /* fix for space in between */
+}
+
+nav li a {
+	display: inline-block; /* must be block so height takes effect */
+	line-height: var(--nav-height);
+	text-decoration: none;
+	padding: 0 20px;
+	border-left: 2px solid var(--nav-bg-color);
+	background-color: var(--nav-link-color);
+	color: white;
+}
+
+nav li#logo a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: none;
+	background-color: var(--nav-bg-color);
+	padding: 0;
+}
+
+nav li#logo img {
+	height: var(--nav-height);
+}
+
+main {
+	flex: 1 0 auto; /* flex-grow flex-shrink flex-basis */
+
+	/* Use flex layout context for items in main content */
+	display: flex;
+	flex-direction: row; /* row, row-reverse, column, column-reverse */
+	flex-wrap: wrap; /* nowrap, wrap, wrap-reverse */
+	justify-content: space-evenly; /* flex-start, flex-end, center, space-between, space-around, space-evenly */
+}
+
+section {
+	border: 3px solid black;
+	text-align: center;
+	width: 300px; /* 25% */
+	height: 100px;
+
+	/* technique 3 - flex */
+
+	/* technique 2 - float */
+	/* float: left; */
+
+	/* technique 1 - inline-block */
+	/* display: inline-block; */
+	/* margin-right: -4px; */ /* Fix space between inline-block elements */
+}
+
+section#red {
+	background-color: red;
+}
+
+section#green {
+	background-color: green;
+}
+
+section#blue {
+	background-color: blue;
+}
+
+section#yellow {
+	background-color: yellow;
+}
+
+footer {
+	background-color: var(--nav-bg-color);
+	text-align: center;
+	width: 100%;
+	flex-shrink: 0;
+}

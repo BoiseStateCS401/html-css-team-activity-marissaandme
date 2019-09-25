@@ -6,57 +6,54 @@
   <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-  <h1>Marissa's CS401 Website</h1>
-  <hr>
-  <h2>HTML, CSS, and JavaScript</h2>
-  <h3>HTML</h3>
-  <p>HTML is the standard markup language for creating Web pages. HTML stands for Hyper Text Markup Language. 
-  HTML describes the structure of Web pages using markup. HTML elements are the building blocks of HTML pages.
-  HTML elements are represented by tags.</p>
-  <a href="https://www.w3schools.com/html/" title="w3schools HTML tutorial">https://www.w3schools.com/html/</a>
+	<header>
+  		<h1>Marissa's CS401 Website</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#html-css-js">HTML, CSS, and JavaScript</a></li>
+			<li><a href="favs.html">Favorite Things</a></li>
+			<li><a href="#q-and-a">Q & A</a></li>
+		</ul>
+	</nav>
+	 <aside id="q-and-a">
+	  <h2>Answers to Random Questions</h2>
+	  <ul>
+		  <li>Block elements: h1, hr, p, table, pre; Inline elements: img, code, a. Block elements span width of screen, inline elements don't. </li>
+		  <li>Default margin of body: 8px
+			  <ul><li>Test</li></ul>
+		  </li>
+		  <li>Default font-size and font-weight of h1: 2em, bold </li>
+		  <li>Page loads in ~376ms</li>
+		  <li>View response status of requests using the Network tab.</li>
+	  </ul>
+  </aside>
 
-  <h3>CSS</h3>
-  <p>CSS is a language that describes the style of an HTML document. CSS describes how HTML elements should be
-  displayed.</p>
-  <a href="https://www.w3schools.com/css/" title="w3schools CSS tutorial">https://www.w3schools.com/css/</a>
+  <article id="html-css-js">
+	  <h2>HTML, CSS, and JavaScript</h2>
+	  <section> 
+	  <h3>HTML</h3>
+	  <p>HTML is the standard markup language for creating Web pages. HTML stands for Hyper Text Markup Language. 
+	  HTML describes the structure of Web pages using markup. HTML elements are the building blocks of HTML pages.
+	  HTML elements are represented by tags.</p>
+	  <a href="https://www.w3schools.com/html/" title="w3schools HTML tutorial">https://www.w3schools.com/html/</a>
+	  </section>
+	
+	  <section>
+	  <h3>CSS</h3>
+	  <p>CSS is a language that describes the style of an HTML document. CSS describes how HTML elements should be
+	  displayed.</p>
+	  <a href="https://www.w3schools.com/css/" title="w3schools CSS tutorial">https://www.w3schools.com/css/</a>
+	  </section>
 
-  <h3>JavaScript</h3>
-  <p>JavaScript is the programming language of HTML and the Web.</p>
-  <a href="https://www.w3schools.com/js/" title="w3schools JavaScript tutorial">https://www.w3schools.com/js/</a>
-
-  <h2>These Are a Few of My Favorite Things</h2>
-  <h3>Favorite Animals</h3>
-  <img src="https://s-media-cache-ak0.pinimg.com/originals/73/08/bc/7308bc952f0f460f6b46fa4f3f97a933.jpg" alt="a magestic white, brown-speckled mare slightly rearing front legs to the right with beautiful sunny skies and green grass" />
-  <img src="https://s-media-cache-ak0.pinimg.com/736x/0a/8b/91/0a8b91f0bfbbcbc65fb7d43cd9ff4c78.jpg" alt="a tiny grey, lop-eared bunny laying on a cuddly white blanket" />
-
-  <h3>My Favorite Program</h3>
-  <pre><code>public class HelloWorld
-{
-  public static void main(String[] args)
-  {
-    System.out.println("Hello World!");
-  }
-}</code></pre>
-  <h3>My favorite Foods</h3>
-  <table id="fav-food">
-  <caption>Favorite foods by meal</caption>
-  <thead>
-    <tr><th>Meal</th><th>Food</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Breakfast</td><td>French Toast</td></tr>
-    <tr><td>Lunch</td><td>Nachos</td></tr>
-    <tr><td>Dinner</td><td>Chicken</td></tr>
-  </tbody>
-  </table>
-  <h2>Answers to Random Questions</h2>
-  <ul>
-	  <li>Block elements: h1, hr, p, table, pre; Inline elements: img, code, a. Block elements span width of screen, inline elements don't. </li>
-	  <li>Default margin of body: 8px</li>
-	  <li>Default font-size and font-weight of h1: 2em, bold </li>
-	  <li>Page loads in ~376ms</li>
-	  <li>View response status of requests using the Network tab.</li>
-  </ul>
+	  <section>
+	  <h3>JavaScript</h3>
+	  <p>JavaScript is the programming language of HTML and the Web.</p>
+	  <a href="https://www.w3schools.com/js/" title="w3schools JavaScript tutorial">https://www.w3schools.com/js/</a>
+	  </section>
+  </article>
+   <footer>
   <p>&copy; Marissa Schmidt 2019</p>
+  </footer>
 </body>
 </html>
